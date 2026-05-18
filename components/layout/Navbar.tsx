@@ -26,9 +26,6 @@ export default function Navbar() {
       {/* Links */}
       <div style={{ display: 'flex', gap: '20px' }}>
         <Link href="/">Home</Link>
-        <Link href="/login">Login</Link>
-        <Link href="/register">Register</Link>
-        <Link href="/dashboard">Dashboard</Link>
       </div>
     </nav>
   )
