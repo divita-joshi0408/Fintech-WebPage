@@ -14,11 +14,11 @@ export default function Security() {
                     <div className="relative z-10 grid lg:grid-cols-2 gap-14 items-center">
 
                         <div>
-                            <p className="text-[#9abd2d] font-semibold text-lg">
+                            <p className="text-[#9abd2d] font-semibold sm:text-xl lg:text-3xl">
                                 Security & Transparency
                             </p>
 
-                            <h2 className="mt-5 text-4xl lg:text-6xl font-bold text-white leading-tight">
+                            <h2 className="mt-5 text-3xl lg:text-5xl font-bold text-white leading-tight">
                                 Safe & Trusted
                                 Digital Lending
                             </h2>

@@ -27,9 +27,9 @@ export default function Footer() {
                         <Image
                             src="/rksWealth-logo2.png"
                             alt="logo"
-                            width={260}
-                            height={260}
-                            className="object-contain scale-[1.20] -ml-12"
+                            width={312}
+                            height={312}
+                            className="object-contain -ml-12"
                         />
 
                         <p className="mt-6 text-[16px] leading-9 text-white/95 font-medium">
@@ -162,7 +162,7 @@ export default function Footer() {
                 </div>
 
                 {/* BOTTOM BAR */}
-                <div className="border-t border-white/20 mt-16 pt-8 flex flex-col lg:flex-row justify-center text-center gap-5 font-bold text-[16px] text-white/90">
+                <div className="border-t border-white/20 mt-16 pt-8 flex flex-col lg:flex-row justify-center text-center gap-5 font-bold text-[12px] sm:text-[14px] lg:text-[16px] text-white/90">
 
                     <p>
                         © RKS Wealth 2026. All rights reserved.

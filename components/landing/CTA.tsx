@@ -60,11 +60,16 @@
 
 'use client'
 
-import { ArrowRight } from 'lucide-react'
 import { useState } from 'react'
 
 export default function CTA() {
     const [hovered, setHovered] = useState(false)
+
+    const handleFlip = () => {
+        if (window.innerWidth < 1024) {
+            setHovered(!hovered)
+        }
+    }
 
     return (
         <section className="py-24 bg-white">
@@ -75,12 +80,17 @@ export default function CTA() {
                     <div
                         onMouseEnter={() => setHovered(true)}
                         onMouseLeave={() => setHovered(false)}
+                        onClick={handleFlip}
                         className="
-                            relative w-full h-[420px]
+                            relative w-full
+                            min-h-[520px]
+                            sm:min-h-[480px]
+                            lg:h-[420px]
                             rounded-[40px]
                             border-2 border-[#9abd2d]
                             [transform-style:preserve-3d]
                             transition-transform duration-700
+                            cursor-pointer
                         "
                         style={{
                             transform: hovered
@@ -95,28 +105,30 @@ export default function CTA() {
                                 absolute inset-0
                                 bg-white
                                 rounded-[40px]
-                                px-10 py-16 lg:px-20 lg:py-20
+                                px-6 py-10
+                                sm:px-10 sm:py-14
+                                lg:px-20 lg:py-20
                                 text-center
                                 text-[#2C476A]
                                 flex flex-col justify-center
                                 [backface-visibility:hidden]
                             "
                         >
-                            <h2 className="text-4xl lg:text-6xl font-bold leading-tight">
+                            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight">
                                 Start Your Smart Lending Journey Today
                             </h2>
 
-                            <p className="mt-8 text-lg opacity-90">
+                            <p className="mt-8 text-base sm:text-lg opacity-90">
                                 Join thousands of investors and borrowers in a secure digital lending ecosystem.
                             </p>
 
-                            <div className="flex flex-wrap justify-center gap-5 mt-10">
+                            <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-5 mt-8 lg:mt-10">
 
-                                <button className="bg-white border border-[#2C476A] text-[#2C476A] px-8 py-4 rounded-2xl font-semibold">
+                                <button className="bg-white border border-[#2C476A] text-[#2C476A] px-8 py-4 rounded-2xl font-semibold w-full sm:w-auto">
                                     Start Lending
                                 </button>
 
-                                <button className="border border-[#2C476A] text-[#2C476A] px-8 py-4 rounded-2xl font-semibold">
+                                <button className="border border-[#2C476A] text-[#2C476A] px-8 py-4 rounded-2xl font-semibold w-full sm:w-auto">
                                     Explore Platform
                                 </button>
 
@@ -130,7 +142,9 @@ export default function CTA() {
                                 bg-[#9abd2d]
                                 text-white
                                 rounded-[40px]
-                                px-10 py-16 lg:px-20 lg:py-20
+                                px-6 py-10
+                                sm:px-10 sm:py-14
+                                lg:px-20 lg:py-20
                                 flex flex-col justify-center text-center
                                 [backface-visibility:hidden]
                             "
@@ -138,15 +152,15 @@ export default function CTA() {
                                 transform: 'rotateX(180deg)',
                             }}
                         >
-                            <h2 className="text-4xl lg:text-5xl font-bold">
+                            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
                                 Trusted Lending Platform
                             </h2>
 
-                            <p className="mt-6 text-lg opacity-90 max-w-2xl mx-auto">
+                            <p className="mt-6 text-base sm:text-lg opacity-90 max-w-2xl mx-auto">
                                 Transparent interest rates, verified borrowers, and secure transactions all in one place.
                             </p>
 
-                            <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <div className="mt-8 lg:mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
 
                                 <div className="bg-white/15 rounded-2xl p-4">
                                     <p className="text-2xl font-bold">0%</p>

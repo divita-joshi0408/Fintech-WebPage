@@ -21,6 +21,7 @@ export default function Navbar() {
         width={170}
         height={170}
         style={{borderRadius: '60px'}}
+        loading="eager"
       />
 
       {/* Links */}

@@ -35,11 +35,11 @@ export default function Benefits() {
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
                 <div className="text-center max-w-3xl mx-auto">
-                    <p className="text-[#9abd2d] font-semibold text-lg">
+                    <p className="text-[#9abd2d] font-semibold sm:text-xl lg:text-3xl">
                         Why Choose Us
                     </p>
 
-                    <h2 className="mt-4 text-4xl lg:text-6xl font-bold text-[#2C476A]">
+                    <h2 className="mt-4 text-3xl lg:text-5xl font-bold text-[#2C476A]">
                         Benefits Of Using
                         Our Platform
                     </h2>

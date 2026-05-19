@@ -18,7 +18,7 @@ export default function WhatIsP2P() {
         <section className="py-24 bg-[#f8fafc]">
             <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
 
-                <h2 className="text-5xl font-bold text-[#2C476A]">
+                <h2 className="text-3xl lg:text-5xl font-bold text-[#2C476A]">
                     What is Peer-to-Peer Lending?
                 </h2>
 
