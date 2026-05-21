@@ -12,10 +12,10 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
                 {/* TOP SECTION */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-14">
 
                     {/* LOGO + SOCIAL */}
-                    <div>
+                    <div className="overflow-hidden">
                         {/* <Image
               src="/rksWealth-logo2.png"
               alt="logo"
@@ -29,7 +29,7 @@ export default function Footer() {
                             alt="logo"
                             width={312}
                             height={312}
-                            className="object-contain -ml-12"
+                            className="object-contain w-48 sm:w-64 md:w-80 max-w-full ml-[-20px] sm:ml-[-30px] md:-ml-12"
                         />
 
                         <p className="mt-6 text-[16px] leading-9 text-white/95 font-medium">
