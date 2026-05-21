@@ -27,6 +27,7 @@ export default function Navbar() {
       {/* Links */}
       <div style={{ display: 'flex', gap: '20px' }}>
         <Link href="/">Home</Link>
+        <Link href="/mutual-funds">MutualFund Page</Link>
       </div>
     </nav>
   )
